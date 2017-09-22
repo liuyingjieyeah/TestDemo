@@ -19,8 +19,8 @@
 /** 初始化界面*/
 - (void)initWindow;
 /** 初始化广告界面*/
-- (void)initAD;
+//- (void)initAD;
 /** 初始化3DTouch功能*/
-- (void)init3DTouch;
+//- (void)init3DTouch;
 
 @end

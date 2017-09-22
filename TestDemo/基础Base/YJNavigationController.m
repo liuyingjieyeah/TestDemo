@@ -14,12 +14,12 @@
 // Views
 
 // Vendors
-//#import "GQGesVCTransition.h"
+#import "GQGesVCTransition.h"
 // Categories
 #import "UIBarButtonItem+YJBarButtonItem.h"
 // Others
 
-@interface YJNavigationController ()
+@interface YJNavigationController ()<UIGestureRecognizerDelegate>
 @end
 
 @implementation YJNavigationController
@@ -32,11 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    [GQGesVCTransition validateGesBackWithType:GQGesVCTransitionTypePanWithPercentRight withRequestFailToLoopScrollView:YES]; //手势返回
-    
-    //去除NavigationBar下方阴影
-//    [[UINavigationBar appearance] setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-//    [[UINavigationBar appearance] setShadowImage:[UIImage new]];
+    [GQGesVCTransition validateGesBackWithType:GQGesVCTransitionTypePanWithPercentRight withRequestFailToLoopScrollView:YES]; //手势返回
     
 }
 
@@ -75,11 +71,6 @@
     [self popViewControllerAnimated:YES];
 }
 
-
-//#pragma mark - 导航栏上状态栏为白色
-- (UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
-}
 
 /**
  如果单单只是想控制所有界面上方的BarStyle可以打开上面的代码打开这行代码并且在那个界面重写上面的代码

@@ -18,12 +18,6 @@
 
 - (void)saveContext;
 
-
-//+ (void)IMLogin : (void(^)(YWConversationViewController *conversationVc))loginSuccess;
-//+ (void)IMLogin;
-//+ (void)IMLoginOut;
-//+ (BOOL)isCurrentViewControllerVisible:(UIViewController *)viewController;
-
 @property(nonatomic, strong) YJRootTabBarController *rootTabbarCtr;
 
 @end

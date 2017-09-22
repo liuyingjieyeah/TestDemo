@@ -46,13 +46,14 @@ static YJBaseViewController *_shareInstance;
 
 #pragma mark - 设置界面
 - (void)setUpUI {
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = BackGroundC;
 }
-
 
 #pragma mark - 收起键盘
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];
 }
+
+
 
 @end

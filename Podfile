@@ -2,13 +2,13 @@
 # platform :ios, '9.0'
 
 target 'TestDemo' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
-
-  # Pods for TestDemo
 
 #pod 'ReactiveCocoa', '~> 6.0'
 pod 'AFNetworking', '~> 3.0'
+pod 'MJRefresh'
+pod 'GQGesVCTransition'
+
+
 
   target 'TestDemoTests' do
     inherit! :search_paths

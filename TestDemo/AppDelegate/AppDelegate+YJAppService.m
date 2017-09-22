@@ -84,6 +84,7 @@
     return YES;
 }
 
+/*
 //3DTouch点击后操作
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{
     
@@ -119,7 +120,7 @@
  localizedSubtitle：副标题
  icon：icon图标 可以使用系统类型 也可以使用自定义的图片
  userInfo：用户信息字典 自定义参数，完成具体功能需求
- */
+ *
 -(void)init3DTouchActionShow:(BOOL)isShow
 {
     UIApplication *application = [UIApplication sharedApplication];
@@ -143,7 +144,7 @@
         application.shortcutItems = @[];
     }
 }
-
+*/
 
 
 @end

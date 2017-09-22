@@ -27,6 +27,16 @@
 #define iphone4 (ScreenH == 480)
 
 
+#define StatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height//44px or 20px
+#define NavBarHeight 44.0
+#define TabBarHeight (Device_Is_iPhoneX? 83 : 49) //83px or 49px
+#define TopHeight (StatusBarHeight + NavBarHeight)
+
+#define Device_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+
+
 
 /** 商品详情数据高度 */
 #define ShopDetailScreenH (ScreenH - 55- 64 - 35 - 30)

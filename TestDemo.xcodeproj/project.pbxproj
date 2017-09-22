@@ -11,7 +11,6 @@
 		3D21B3A0D349196E9EA91F7F /* libPods-TestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D079E400D672103B8D28195 /* libPods-TestDemo.a */; };
 		6F421DC2715EC5072BC4C7BD /* libPods-TestDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B137D0259C792BD53D3F16 /* libPods-TestDemoUITests.a */; };
 		8D7DB0391F73F7D9007D7B02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7DB0381F73F7D9007D7B02 /* ViewController.m */; };
-		8D7DB03C1F73F7D9007D7B02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7DB03A1F73F7D9007D7B02 /* Main.storyboard */; };
 		8D7DB03F1F73F7D9007D7B02 /* TestDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D7DB03D1F73F7D9007D7B02 /* TestDemo.xcdatamodeld */; };
 		8D7DB0411F73F7D9007D7B02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7DB0401F73F7D9007D7B02 /* Assets.xcassets */; };
 		8D7DB0441F73F7D9007D7B02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7DB0421F73F7D9007D7B02 /* LaunchScreen.storyboard */; };
@@ -30,6 +29,7 @@
 		8D7DB0E11F7499E3007D7B02 /* StaticClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7DB0E01F7499E3007D7B02 /* StaticClass.m */; };
 		8D7DB0F11F74BC09007D7B02 /* UIBarButtonItem+YJBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7DB0F01F74BC09007D7B02 /* UIBarButtonItem+YJBarButtonItem.m */; };
 		8D7DB0F41F74BE0E007D7B02 /* YJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7DB0F31F74BE0E007D7B02 /* YJTabBar.m */; };
+		8D7DB0F81F74D675007D7B02 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7DB0F71F74D675007D7B02 /* MessageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,6 @@
 		8D7DB0311F73F7D9007D7B02 /* TestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7DB0371F73F7D9007D7B02 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8D7DB0381F73F7D9007D7B02 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8D7DB03B1F73F7D9007D7B02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D7DB03E1F73F7D9007D7B02 /* TestDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestDemo.xcdatamodel; sourceTree = "<group>"; };
 		8D7DB0401F73F7D9007D7B02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D7DB0431F73F7D9007D7B02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,6 +98,8 @@
 		8D7DB0F21F74BE0E007D7B02 /* YJTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJTabBar.h; sourceTree = "<group>"; };
 		8D7DB0F31F74BE0E007D7B02 /* YJTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJTabBar.m; sourceTree = "<group>"; };
 		8D7DB0F51F74BF17007D7B02 /* PingFang Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PingFang Medium.ttf"; sourceTree = "<group>"; };
+		8D7DB0F61F74D675007D7B02 /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		8D7DB0F71F74D675007D7B02 /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		9D66AC55C6A4A244D6CF15DF /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B6B137D0259C792BD53D3F16 /* libPods-TestDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2FFDF84A30EDF4DB4B07D6 /* Pods-TestDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemoUITests/Pods-TestDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -289,7 +290,6 @@
 			isa = PBXGroup;
 			children = (
 				8D7DB0F51F74BF17007D7B02 /* PingFang Medium.ttf */,
-				8D7DB03A1F73F7D9007D7B02 /* Main.storyboard */,
 				8D7DB0401F73F7D9007D7B02 /* Assets.xcassets */,
 				8D7DB0421F73F7D9007D7B02 /* LaunchScreen.storyboard */,
 				8D7DB0461F73F7D9007D7B02 /* main.m */,
@@ -303,6 +303,8 @@
 			children = (
 				8D7DB0DB1F74983A007D7B02 /* HomeViewController.h */,
 				8D7DB0DC1F74983A007D7B02 /* HomeViewController.m */,
+				8D7DB0F61F74D675007D7B02 /* MessageViewController.h */,
+				8D7DB0F71F74D675007D7B02 /* MessageViewController.m */,
 			);
 			path = "Modules(单元)";
 			sourceTree = "<group>";
@@ -459,7 +461,6 @@
 			files = (
 				8D7DB0441F73F7D9007D7B02 /* LaunchScreen.storyboard in Resources */,
 				8D7DB0411F73F7D9007D7B02 /* Assets.xcassets in Resources */,
-				8D7DB03C1F73F7D9007D7B02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +629,7 @@
 				8D7DB0391F73F7D9007D7B02 /* ViewController.m in Sources */,
 				8D7DB0BE1F740F91007D7B02 /* AppDelegate+YJAppService.m in Sources */,
 				8D7DB0B81F740F3D007D7B02 /* AppDelegate.m in Sources */,
+				8D7DB0F81F74D675007D7B02 /* MessageViewController.m in Sources */,
 				8D7DB0C51F741860007D7B02 /* YJNavigationController.m in Sources */,
 				8D7DB06C1F73F904007D7B02 /* TestUnit.m in Sources */,
 				8D7DB0C81F741888007D7B02 /* YJRootTabBarController.m in Sources */,
@@ -672,14 +674,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8D7DB03A1F73F7D9007D7B02 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8D7DB03B1F73F7D9007D7B02 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8D7DB0421F73F7D9007D7B02 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -807,7 +801,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PHUF2ASV3Q;
 				INFOPLIST_FILE = TestDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liuyingjie.TestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -823,7 +817,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PHUF2ASV3Q;
 				INFOPLIST_FILE = TestDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liuyingjie.TestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

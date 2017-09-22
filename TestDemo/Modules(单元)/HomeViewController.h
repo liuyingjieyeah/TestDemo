@@ -10,4 +10,6 @@
 
 @interface HomeViewController : UIViewController
 
+//@"http://wapi.hexun.com/Api_newsXml_v3.cc?appId=2&pid=100228599&pc=20&pn=1"
+
 @end

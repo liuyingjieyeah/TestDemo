@@ -10,6 +10,8 @@
 
 @interface YJBaseViewController : UIViewController
 
+@property (nonatomic) BOOL invalidGesture;
+
 + (instancetype)shareInstance;
 
 @end
