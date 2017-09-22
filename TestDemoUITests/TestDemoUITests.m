@@ -35,6 +35,13 @@
 - (void)testExample {
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    //1.鼠标放在这里
+    //2.点击下方红色录制按钮
+    
+//    XCUIElement *button = [[XCUIApplication alloc]init].buttons[@"btn"];
+//    [button tap];
+
+
 }
 
 @end

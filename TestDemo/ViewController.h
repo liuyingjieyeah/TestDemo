@@ -8,8 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+enum Student{
+    xiaoming = 0,
+    xiaohong,
+    xiaoli
+}Student;
+
+typedef NS_ENUM(NSInteger, Test) {
+    TestOne = 0,
+    TestTwo,
+    TestThree
+};
+
 @interface ViewController : UIViewController
 
+@property (nonatomic, assign) Test testClass;
 
 @end
 

@@ -16,13 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    //ENUM
+    self.testClass = TestTwo;
+    
+    
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 100, 50)];
+    btn.center = self.view.center;
+    [btn setTitle:@"Click" forState:UIControlStateNormal];
+    [self.view addSubview:btn];
+    
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
