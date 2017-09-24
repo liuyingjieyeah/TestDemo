@@ -39,6 +39,8 @@
 		8DF01BA01F77A01000018807 /* CWDrawerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B3211F776AE700F74A87 /* CWDrawerTransition.m */; };
 		8DF01BA11F77A01000018807 /* CWInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B3231F776AE700F74A87 /* CWInteractiveTransition.m */; };
 		8DF01BA21F77A01000018807 /* CWLateralSlideAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B3251F776AE700F74A87 /* CWLateralSlideAnimator.m */; };
+		8DF01BAA1F780C1200018807 /* WeChatStylePlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF01BA61F7808C200018807 /* WeChatStylePlaceHolder.m */; };
+		8DF01BAB1F780C1200018807 /* XTNetReloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF01BA91F7808C200018807 /* XTNetReloader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +129,10 @@
 		8D86B3291F776AE700F74A87 /* UIViewController+CWLateralSlide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CWLateralSlide.m"; sourceTree = "<group>"; };
 		8D86B32A1F77704F00F74A87 /* CWLateralSlideConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWLateralSlideConfiguration.m; sourceTree = "<group>"; };
 		8D86B32B1F77704F00F74A87 /* CWLateralSlideConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWLateralSlideConfiguration.h; sourceTree = "<group>"; };
+		8DF01BA51F7808C200018807 /* WeChatStylePlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeChatStylePlaceHolder.h; sourceTree = "<group>"; };
+		8DF01BA61F7808C200018807 /* WeChatStylePlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatStylePlaceHolder.m; sourceTree = "<group>"; };
+		8DF01BA81F7808C200018807 /* XTNetReloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTNetReloader.h; sourceTree = "<group>"; };
+		8DF01BA91F7808C200018807 /* XTNetReloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTNetReloader.m; sourceTree = "<group>"; };
 		9D66AC55C6A4A244D6CF15DF /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B6B137D0259C792BD53D3F16 /* libPods-TestDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2FFDF84A30EDF4DB4B07D6 /* Pods-TestDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemoUITests/Pods-TestDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -336,6 +342,7 @@
 				8D7DB0F71F74D675007D7B02 /* MessageViewController.m */,
 				8D86B3081F76695500F74A87 /* DetailViewController.h */,
 				8D86B3091F76695500F74A87 /* DetailViewController.m */,
+				8DF01BA31F7808C200018807 /* PlaceHolderView */,
 				8D86B3181F7746D100F74A87 /* LeftMenuViewController */,
 				8D86B2FF1F76024000F74A87 /* NavSearchBar */,
 			);
@@ -401,6 +408,33 @@
 				8D86B3291F776AE700F74A87 /* UIViewController+CWLateralSlide.m */,
 			);
 			path = CWLateralSlide;
+			sourceTree = "<group>";
+		};
+		8DF01BA31F7808C200018807 /* PlaceHolderView */ = {
+			isa = PBXGroup;
+			children = (
+				8DF01BA41F7808C200018807 /* WeChatStyle */,
+				8DF01BA71F7808C200018807 /* XTNetReloader */,
+			);
+			path = PlaceHolderView;
+			sourceTree = "<group>";
+		};
+		8DF01BA41F7808C200018807 /* WeChatStyle */ = {
+			isa = PBXGroup;
+			children = (
+				8DF01BA51F7808C200018807 /* WeChatStylePlaceHolder.h */,
+				8DF01BA61F7808C200018807 /* WeChatStylePlaceHolder.m */,
+			);
+			path = WeChatStyle;
+			sourceTree = "<group>";
+		};
+		8DF01BA71F7808C200018807 /* XTNetReloader */ = {
+			isa = PBXGroup;
+			children = (
+				8DF01BA81F7808C200018807 /* XTNetReloader.h */,
+				8DF01BA91F7808C200018807 /* XTNetReloader.m */,
+			);
+			path = XTNetReloader;
 			sourceTree = "<group>";
 		};
 		CB6E2D1AFBF938F40FE132FC /* Frameworks */ = {
@@ -692,6 +726,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF01BAA1F780C1200018807 /* WeChatStylePlaceHolder.m in Sources */,
+				8DF01BAB1F780C1200018807 /* XTNetReloader.m in Sources */,
 				8DF01BA01F77A01000018807 /* CWDrawerTransition.m in Sources */,
 				8DF01BA11F77A01000018807 /* CWInteractiveTransition.m in Sources */,
 				8DF01BA21F77A01000018807 /* CWLateralSlideAnimator.m in Sources */,

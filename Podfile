@@ -8,7 +8,8 @@ pod 'AFNetworking', '~> 3.0'
 pod 'MJRefresh'
 pod 'GQGesVCTransition'
 pod 'Masonry'
-#pod 'CWLateralSlide', '~> 1.0.3'
+pod 'CYLTableViewPlaceHolder'   #Empty TableView - NotFound 404
+
 
   target 'TestDemoTests' do
     inherit! :search_paths
