@@ -34,6 +34,11 @@
 		8D86B3061F76072C00F74A87 /* UIView+YJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B3051F76072C00F74A87 /* UIView+YJExtension.m */; };
 		8D86B30A1F76695500F74A87 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B3091F76695500F74A87 /* DetailViewController.m */; };
 		8D86B31B1F77470300F74A87 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B31A1F77470300F74A87 /* LeftMenuViewController.m */; };
+		8DF01B9E1F779FF000018807 /* UIViewController+CWLateralSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B3291F776AE700F74A87 /* UIViewController+CWLateralSlide.m */; };
+		8DF01B9F1F77A00200018807 /* CWLateralSlideConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B32A1F77704F00F74A87 /* CWLateralSlideConfiguration.m */; };
+		8DF01BA01F77A01000018807 /* CWDrawerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B3211F776AE700F74A87 /* CWDrawerTransition.m */; };
+		8DF01BA11F77A01000018807 /* CWInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B3231F776AE700F74A87 /* CWInteractiveTransition.m */; };
+		8DF01BA21F77A01000018807 /* CWLateralSlideAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B3251F776AE700F74A87 /* CWLateralSlideAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -687,6 +692,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF01BA01F77A01000018807 /* CWDrawerTransition.m in Sources */,
+				8DF01BA11F77A01000018807 /* CWInteractiveTransition.m in Sources */,
+				8DF01BA21F77A01000018807 /* CWLateralSlideAnimator.m in Sources */,
+				8DF01B9F1F77A00200018807 /* CWLateralSlideConfiguration.m in Sources */,
+				8DF01B9E1F779FF000018807 /* UIViewController+CWLateralSlide.m in Sources */,
 				8D7DB0D11F741CDF007D7B02 /* UIImage+YJImage.m in Sources */,
 				8D7DB03F1F73F7D9007D7B02 /* TestDemo.xcdatamodeld in Sources */,
 				8D7DB0D81F742728007D7B02 /* YJConsts.m in Sources */,

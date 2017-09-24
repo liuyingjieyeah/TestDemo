@@ -16,7 +16,7 @@
 #import "YJNavSearchBarView.h"
 // Vendors
 #import "MJRefresh.h"
-//#import "UIViewController+CWLateralSlide.h"
+#import "UIViewController+CWLateralSlide.h"
 
 // Categories
 #import "UIBarButtonItem+YJBarButtonItem.h"
@@ -51,10 +51,10 @@
     [self setUpScrollToTopView];
     
     // 注册手势驱动
-//    __weak typeof(self)weakSelf = self;
-//    [self cw_registerShowIntractiveWithEdgeGesture:YES direction:CWDrawerTransitionDirectionLeft transitionBlock:^{
-//        [weakSelf drawerMaskAnimationLeft];
-//    }];
+    __weak typeof(self)weakSelf = self;
+    [self cw_registerShowIntractiveWithEdgeGesture:YES direction:CWDrawerTransitionDirectionLeft transitionBlock:^{
+        [weakSelf drawerMaskAnimationLeft];
+    }];
 }
 
 #pragma mark - initialize
@@ -206,10 +206,10 @@
  *  CWDrawerAnimationTypeDefault/CWDrawerAnimationTypeMask
  */
 - (void)drawerMaskAnimationLeft{
-//    LeftMenuViewController *vc = [[LeftMenuViewController alloc] init];
-//    CWLateralSlideConfiguration *conf1 = [CWLateralSlideConfiguration configurationWithDistance:0 maskAlpha:0.4 scaleY:0.8 direction:CWDrawerTransitionDirectionLeft backImage:[UIImage imageNamed:@"lena"]];
-////    [self cw_presentViewController:vc configuration:nil];//新版默认nil
-//    [self cw_showDrawerViewController:vc animationType:CWDrawerAnimationTypeMask configuration:conf1];
+    LeftMenuViewController *vc = [[LeftMenuViewController alloc] init];
+    CWLateralSlideConfiguration *conf1 = [CWLateralSlideConfiguration configurationWithDistance:0 maskAlpha:0.4 scaleY:0.8 direction:CWDrawerTransitionDirectionLeft backImage:[UIImage imageNamed:@"lena"]];
+//    [self cw_presentViewController:vc configuration:nil];//新版默认nil
+    [self cw_showDrawerViewController:vc animationType:CWDrawerAnimationTypeMask configuration:conf1];
     
 }
 
