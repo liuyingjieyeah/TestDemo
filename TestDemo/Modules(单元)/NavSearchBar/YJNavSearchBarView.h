@@ -10,6 +10,9 @@
 
 @interface YJNavSearchBarView : UIView
 
+/* iOS11新增适配 */
+@property(nonatomic, assign) CGSize intrinsicContentSize;
+
 /* 语音按钮 */
 @property (strong , nonatomic)UIButton *voiceImageBtn;
 /* 占位文字 */

@@ -22,6 +22,21 @@
 
 @implementation YJNavSearchBarView
 
+static bool closeIntrinsic = false; //Intrinsic的影响
+
+/**
+ 通过覆盖intrinsicContentSize函数修改自定义View的Intrinsic的大小
+ @return CGSize
+ */
+-(CGSize)intrinsicContentSize
+{
+    if (closeIntrinsic) {
+        return CGSizeMake(UIViewNoIntrinsicMetric, UIViewNoIntrinsicMetric);
+    } else {
+        return CGSizeMake(self.view_width, self.view_height);
+    }
+}
+
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         

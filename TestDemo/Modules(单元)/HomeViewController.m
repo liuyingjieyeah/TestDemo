@@ -71,11 +71,6 @@
     //消息
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem ItemWithImage:[UIImage imageNamed:@"message"] WithHighlighted:[UIImage imageNamed:@"message"] Target:self action:@selector(messageItemClick)];
     
-    
-    UIImageView *imgV = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"lena"]];
-    imgV.frame = CGRectMake(60, 25, ScreenW - 120, 35);
-    self.navigationItem.titleView = imgV;
-    
     //中间搜索及语音
     YJNavSearchBarView *searchBarVc = [[YJNavSearchBarView alloc] init];
     searchBarVc.placeholdLabel.text = @"618 100元红包等你来抢";
