@@ -10,6 +10,10 @@
 
 @interface YJConsts : NSObject
 
+/** 常量数 */
+UIKIT_EXTERN CGFloat const Margin;
+
+
 /** 重要标题或操作按钮字体大小(如导航栏标题，主页标题) */
 UIKIT_EXTERN NSInteger const YKCNaviFont;
 /** 用于大多数(如首页信息，个人资料) */
@@ -24,5 +28,6 @@ UIKIT_EXTERN NSInteger const YKCMinorBuyFont;
 UIKIT_EXTERN CGFloat const YKCTabBarFont;
 /** 所有控件左边开始位置以及彼此之间距离 */
 UIKIT_EXTERN CGFloat const YKCLeftMargin;
+
 
 @end

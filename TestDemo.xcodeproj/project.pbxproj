@@ -30,6 +30,10 @@
 		8D7DB0F11F74BC09007D7B02 /* UIBarButtonItem+YJBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7DB0F01F74BC09007D7B02 /* UIBarButtonItem+YJBarButtonItem.m */; };
 		8D7DB0F41F74BE0E007D7B02 /* YJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7DB0F31F74BE0E007D7B02 /* YJTabBar.m */; };
 		8D7DB0F81F74D675007D7B02 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7DB0F71F74D675007D7B02 /* MessageViewController.m */; };
+		8D86B3021F76027300F74A87 /* YJNavSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B3011F76027300F74A87 /* YJNavSearchBarView.m */; };
+		8D86B3061F76072C00F74A87 /* UIView+YJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B3051F76072C00F74A87 /* UIView+YJExtension.m */; };
+		8D86B30A1F76695500F74A87 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B3091F76695500F74A87 /* DetailViewController.m */; };
+		8D86B31B1F77470300F74A87 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D86B31A1F77470300F74A87 /* LeftMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +104,24 @@
 		8D7DB0F51F74BF17007D7B02 /* PingFang Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PingFang Medium.ttf"; sourceTree = "<group>"; };
 		8D7DB0F61F74D675007D7B02 /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		8D7DB0F71F74D675007D7B02 /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		8D86B3001F76027300F74A87 /* YJNavSearchBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJNavSearchBarView.h; sourceTree = "<group>"; };
+		8D86B3011F76027300F74A87 /* YJNavSearchBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJNavSearchBarView.m; sourceTree = "<group>"; };
+		8D86B3041F76072C00F74A87 /* UIView+YJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YJExtension.h"; sourceTree = "<group>"; };
+		8D86B3051F76072C00F74A87 /* UIView+YJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YJExtension.m"; sourceTree = "<group>"; };
+		8D86B3081F76695500F74A87 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		8D86B3091F76695500F74A87 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		8D86B3191F77470300F74A87 /* LeftMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
+		8D86B31A1F77470300F74A87 /* LeftMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		8D86B3201F776AE700F74A87 /* CWDrawerTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWDrawerTransition.h; sourceTree = "<group>"; };
+		8D86B3211F776AE700F74A87 /* CWDrawerTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWDrawerTransition.m; sourceTree = "<group>"; };
+		8D86B3221F776AE700F74A87 /* CWInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWInteractiveTransition.h; sourceTree = "<group>"; };
+		8D86B3231F776AE700F74A87 /* CWInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWInteractiveTransition.m; sourceTree = "<group>"; };
+		8D86B3241F776AE700F74A87 /* CWLateralSlideAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWLateralSlideAnimator.h; sourceTree = "<group>"; };
+		8D86B3251F776AE700F74A87 /* CWLateralSlideAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWLateralSlideAnimator.m; sourceTree = "<group>"; };
+		8D86B3281F776AE700F74A87 /* UIViewController+CWLateralSlide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CWLateralSlide.h"; sourceTree = "<group>"; };
+		8D86B3291F776AE700F74A87 /* UIViewController+CWLateralSlide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CWLateralSlide.m"; sourceTree = "<group>"; };
+		8D86B32A1F77704F00F74A87 /* CWLateralSlideConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWLateralSlideConfiguration.m; sourceTree = "<group>"; };
+		8D86B32B1F77704F00F74A87 /* CWLateralSlideConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWLateralSlideConfiguration.h; sourceTree = "<group>"; };
 		9D66AC55C6A4A244D6CF15DF /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B6B137D0259C792BD53D3F16 /* libPods-TestDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2FFDF84A30EDF4DB4B07D6 /* Pods-TestDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemoUITests/Pods-TestDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,7 +201,7 @@
 				8D7DB0B51F740F3D007D7B02 /* AppDelegate */,
 				8D7DB0691F73F8D9007D7B02 /* Unit单元测试 */,
 				8D7DB0D91F74977B007D7B02 /* Others */,
-				8D7DB0E81F74B1E5007D7B02 /* Vendors(第三方) */,
+				8D7DB0E81F74B1E5007D7B02 /* Vendors */,
 				8D7DB0451F73F7D9007D7B02 /* Info.plist */,
 			);
 			path = TestDemo;
@@ -273,6 +295,8 @@
 				8D7DB0D01F741CDF007D7B02 /* UIImage+YJImage.m */,
 				8D7DB0EF1F74BC09007D7B02 /* UIBarButtonItem+YJBarButtonItem.h */,
 				8D7DB0F01F74BC09007D7B02 /* UIBarButtonItem+YJBarButtonItem.m */,
+				8D86B3041F76072C00F74A87 /* UIView+YJExtension.h */,
+				8D86B3051F76072C00F74A87 /* UIView+YJExtension.m */,
 			);
 			path = "Category(分类)";
 			sourceTree = "<group>";
@@ -305,6 +329,10 @@
 				8D7DB0DC1F74983A007D7B02 /* HomeViewController.m */,
 				8D7DB0F61F74D675007D7B02 /* MessageViewController.h */,
 				8D7DB0F71F74D675007D7B02 /* MessageViewController.m */,
+				8D86B3081F76695500F74A87 /* DetailViewController.h */,
+				8D86B3091F76695500F74A87 /* DetailViewController.m */,
+				8D86B3181F7746D100F74A87 /* LeftMenuViewController */,
+				8D86B2FF1F76024000F74A87 /* NavSearchBar */,
 			);
 			path = "Modules(单元)";
 			sourceTree = "<group>";
@@ -327,11 +355,47 @@
 			path = TabView;
 			sourceTree = "<group>";
 		};
-		8D7DB0E81F74B1E5007D7B02 /* Vendors(第三方) */ = {
+		8D7DB0E81F74B1E5007D7B02 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				8D86B31F1F776AE700F74A87 /* CWLateralSlide */,
 			);
-			path = "Vendors(第三方)";
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		8D86B2FF1F76024000F74A87 /* NavSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				8D86B3001F76027300F74A87 /* YJNavSearchBarView.h */,
+				8D86B3011F76027300F74A87 /* YJNavSearchBarView.m */,
+			);
+			path = NavSearchBar;
+			sourceTree = "<group>";
+		};
+		8D86B3181F7746D100F74A87 /* LeftMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8D86B3191F77470300F74A87 /* LeftMenuViewController.h */,
+				8D86B31A1F77470300F74A87 /* LeftMenuViewController.m */,
+			);
+			path = LeftMenuViewController;
+			sourceTree = "<group>";
+		};
+		8D86B31F1F776AE700F74A87 /* CWLateralSlide */ = {
+			isa = PBXGroup;
+			children = (
+				8D86B3201F776AE700F74A87 /* CWDrawerTransition.h */,
+				8D86B3211F776AE700F74A87 /* CWDrawerTransition.m */,
+				8D86B3221F776AE700F74A87 /* CWInteractiveTransition.h */,
+				8D86B3231F776AE700F74A87 /* CWInteractiveTransition.m */,
+				8D86B3241F776AE700F74A87 /* CWLateralSlideAnimator.h */,
+				8D86B3251F776AE700F74A87 /* CWLateralSlideAnimator.m */,
+				8D86B32B1F77704F00F74A87 /* CWLateralSlideConfiguration.h */,
+				8D86B32A1F77704F00F74A87 /* CWLateralSlideConfiguration.m */,
+				8D86B3281F776AE700F74A87 /* UIViewController+CWLateralSlide.h */,
+				8D86B3291F776AE700F74A87 /* UIViewController+CWLateralSlide.m */,
+			);
+			path = CWLateralSlide;
 			sourceTree = "<group>";
 		};
 		CB6E2D1AFBF938F40FE132FC /* Frameworks */ = {
@@ -632,12 +696,16 @@
 				8D7DB0F81F74D675007D7B02 /* MessageViewController.m in Sources */,
 				8D7DB0C51F741860007D7B02 /* YJNavigationController.m in Sources */,
 				8D7DB06C1F73F904007D7B02 /* TestUnit.m in Sources */,
+				8D86B30A1F76695500F74A87 /* DetailViewController.m in Sources */,
 				8D7DB0C81F741888007D7B02 /* YJRootTabBarController.m in Sources */,
 				8D7DB0471F73F7D9007D7B02 /* main.m in Sources */,
 				8D7DB0E11F7499E3007D7B02 /* StaticClass.m in Sources */,
 				8D7DB0C21F74173D007D7B02 /* YJBaseViewController.m in Sources */,
 				8D7DB0F11F74BC09007D7B02 /* UIBarButtonItem+YJBarButtonItem.m in Sources */,
+				8D86B3021F76027300F74A87 /* YJNavSearchBarView.m in Sources */,
+				8D86B3061F76072C00F74A87 /* UIView+YJExtension.m in Sources */,
 				8D7DB0DD1F74983A007D7B02 /* HomeViewController.m in Sources */,
+				8D86B31B1F77470300F74A87 /* LeftMenuViewController.m in Sources */,
 				8D7DB0F41F74BE0E007D7B02 /* YJTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -800,6 +868,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PHUF2ASV3Q;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -816,6 +885,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PHUF2ASV3Q;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

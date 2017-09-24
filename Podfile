@@ -7,8 +7,8 @@ target 'TestDemo' do
 pod 'AFNetworking', '~> 3.0'
 pod 'MJRefresh'
 pod 'GQGesVCTransition'
-
-
+pod 'Masonry'
+#pod 'CWLateralSlide', '~> 1.0.3'
 
   target 'TestDemoTests' do
     inherit! :search_paths

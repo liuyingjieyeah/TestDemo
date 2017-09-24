@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "AppDelegate+YJAppService.h"
 
+//#import "GQGesVCTransition.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+//    [GQGesVCTransition validateGesBackWithType:GQGesVCTransitionTypePanWithPercentRight withRequestFailToLoopScrollView:YES]; //手势返回
+    
+    
     // 获取通讯录权限
     //[PPGetAddressBook requestAddressBookAuthorization];
     //打开日志

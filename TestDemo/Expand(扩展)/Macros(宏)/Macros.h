@@ -60,22 +60,21 @@
 #define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 #define RGB(r,g,b) RGBA(r,g,b,1.0f)
 
-#define PF20Font [UIFont fontWithName:@"PingFang SC" size:20];
-#define PF18Font [UIFont fontWithName:@"PingFang SC" size:18];
-#define PF16Font [UIFont fontWithName:@"PingFang SC" size:16];
-#define PF14Font [UIFont fontWithName:@"PingFang SC" size:14];
-#define PF12Font [UIFont fontWithName:@"PingFang SC" size:12];
-#define PF13Font [UIFont fontWithName:@"PingFang SC" size:13];
-#define PF10Font [UIFont fontWithName:@"PingFang SC" size:10];
-#define PF8Font [UIFont fontWithName:@"PingFang SC" size:8];
+
+//字体
+#define PFR [[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0 ? @"PingFangSC-Regular" : @"PingFang SC"
+#define PFR20Font [UIFont fontWithName:PFR size:20];
+#define PFR18Font [UIFont fontWithName:PFR size:18];
+#define PFR16Font [UIFont fontWithName:PFR size:16];
+#define PFR15Font [UIFont fontWithName:PFR size:15];
+#define PFR14Font [UIFont fontWithName:PFR size:14];
+#define PFR13Font [UIFont fontWithName:PFR size:13];
+#define PFR12Font [UIFont fontWithName:PFR size:12];
+#define PFR11Font [UIFont fontWithName:PFR size:11];
+#define PFR10Font [UIFont fontWithName:PFR size:10];
 
 
 #define IMP_BLOCK_SELF(type) __weak type *block_self=self;
-
-
-
-
-
 
 
 

@@ -10,6 +10,14 @@
 
 @implementation YJConsts
 
+
+/** 常量数 */
+CGFloat const Margin = 10;
+
+
+
+
+
 /** 重要标题或操作按钮字体大小(如导航栏标题，主页标题) */
 NSInteger const YKCNaviFont = 20;
 /** 用于大多数(如首页信息，个人资料) */

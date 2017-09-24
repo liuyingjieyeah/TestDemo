@@ -6,12 +6,21 @@
 //  Copyright © 2017年 刘英杰. All rights reserved.
 //
 
+// Controllers
 #import "HomeViewController.h"
 #import "MessageViewController.h"
+#import "LeftMenuViewController.h"
+// Models
 
+// Views
+#import "YJNavSearchBarView.h"
+// Vendors
 #import "MJRefresh.h"
+//#import "UIViewController+CWLateralSlide.h"
 
+// Categories
 #import "UIBarButtonItem+YJBarButtonItem.h"
+// Others
 
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -40,6 +49,12 @@
     [self setUpNav];
     [self setUpGoodsData];
     [self setUpScrollToTopView];
+    
+    // 注册手势驱动
+//    __weak typeof(self)weakSelf = self;
+//    [self cw_registerShowIntractiveWithEdgeGesture:YES direction:CWDrawerTransitionDirectionLeft transitionBlock:^{
+//        [weakSelf drawerMaskAnimationLeft];
+//    }];
 }
 
 #pragma mark - initialize
@@ -51,22 +66,27 @@
 
 #pragma mark - 导航栏处理
 - (void)setUpNav{
-    //二维码
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem ItemWithImage:[UIImage imageNamed:@"richScan"] WithHighlighted:[UIImage imageNamed:@"richScan"] Target:self action:@selector(richScanItemClick)];
+    //二维码-richScanItemClick
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem ItemWithImage:[UIImage imageNamed:@"richScan"] WithHighlighted:[UIImage imageNamed:@"richScan"] Target:self action:@selector(drawerMaskAnimationLeft)];//drawerMaskAnimationLeft
     //消息
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem ItemWithImage:[UIImage imageNamed:@"message"] WithHighlighted:[UIImage imageNamed:@"message"] Target:self action:@selector(messageItemClick)];
+    
+    
+    UIImageView *imgV = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"lena"]];
+    imgV.frame = CGRectMake(60, 25, ScreenW - 120, 35);
+    self.navigationItem.titleView = imgV;
+    
     //中间搜索及语音
-//    DCNavSearchBarView *searchBarVc = [[DCNavSearchBarView alloc] init];
-//    searchBarVc.placeholdLabel.text = @"618 100元红包等你来抢";
-//    searchBarVc.frame = CGRectMake(60, 25, ScreenW - 120, 35);
-//    searchBarVc.voiceButtonClickBlock = ^{
-//        NSLog(@"语音点击回调");
-//    };
-//    searchBarVc.searchViewBlock = ^{
-//        NSLog(@"搜索");
-//    };
-//
-//    self.navigationItem.titleView = searchBarVc;
+    YJNavSearchBarView *searchBarVc = [[YJNavSearchBarView alloc] init];
+    searchBarVc.placeholdLabel.text = @"618 100元红包等你来抢";
+    searchBarVc.frame = CGRectMake(60, 25, ScreenW - 120, 35);
+    searchBarVc.voiceButtonClickBlock = ^{
+        NSLog(@"语音点击回调");
+    };
+    searchBarVc.searchViewBlock = ^{
+        NSLog(@"搜索");
+    };
+    self.navigationItem.titleView = searchBarVc;
 }
 
 #pragma mark - 加载数据
@@ -96,6 +116,7 @@
     [self.tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
 }
 
+/****************************TableView********************************/
 
 #pragma mark - LazyLoad
 - (UITableView *)tableView{
@@ -123,10 +144,8 @@
         self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             [self reFreshData];
         }];
-        
         //自动更改透明度
         self.tableView.mj_header.automaticallyChangeAlpha = YES;
-        
         self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
             [self loadMore];
         }];
@@ -163,6 +182,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:true];
     
+    [self.navigationController pushViewController:[[MessageViewController alloc]init] animated:true];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -182,14 +202,21 @@
 }
 
 
-
-
+/** 左滑抽屉菜单
+ *  CWDrawerAnimationTypeDefault/CWDrawerAnimationTypeMask
+ */
+- (void)drawerMaskAnimationLeft{
+//    LeftMenuViewController *vc = [[LeftMenuViewController alloc] init];
+//    CWLateralSlideConfiguration *conf1 = [CWLateralSlideConfiguration configurationWithDistance:0 maskAlpha:0.4 scaleY:0.8 direction:CWDrawerTransitionDirectionLeft backImage:[UIImage imageNamed:@"lena"]];
+////    [self cw_presentViewController:vc configuration:nil];//新版默认nil
+//    [self cw_showDrawerViewController:vc animationType:CWDrawerAnimationTypeMask configuration:conf1];
+    
+}
 
 
 
 #pragma mark - 二维码扫码
-- (void)richScanItemClick
-{
+- (void)richScanItemClick{
 //    LBXScanViewStyle *style = [[LBXScanViewStyle alloc]init];
 //    style.centerUpOffset = 44;
 //    style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle_Outer;
@@ -210,9 +237,9 @@
 //        NSLog(@"扫码结果");
 //    };
 }
+
 #pragma mark - 消息
-- (void)messageItemClick
-{
+- (void)messageItemClick{
     MessageViewController *messageVc = [[MessageViewController alloc] init];
     messageVc.title = @"消息中心";
     [self.navigationController pushViewController:messageVc animated:YES];

@@ -11,7 +11,8 @@
 
 // Controllers
 #import "YJNavigationController.h"
-#import "HomeViewController.h"
+//#import "HomeViewController.h"
+#import "YJBaseViewController.h"
 
 // Models
 
@@ -78,7 +79,7 @@
                             ];
     [childArray enumerateObjectsUsingBlock:^(NSDictionary *dict, NSUInteger idx, BOOL * _Nonnull stop) {
         
-        UIViewController *vc = [NSClassFromString(dict[MallClassKey]) new];
+        YJBaseViewController *vc = [NSClassFromString(dict[MallClassKey]) new];
         vc.navigationItem.title = ([dict[MallTitleKey] isEqualToString:@"首页"] || [dict[MallTitleKey] isEqualToString:@"分类"]) ? nil : dict[MallTitleKey];
         YJNavigationController *nav = [[YJNavigationController alloc] initWithRootViewController:vc];
         
@@ -90,9 +91,27 @@
     }];
 }
 
+
+
+#pragma mark - <UITabBarControllerDelegate>
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    //点击tabBarItem动画
+    [self tabBarButtonClick:[self getTabBarButton]];
+}
+
+- (UIControl *)getTabBarButton{
+    NSMutableArray *tabBarButtons = [[NSMutableArray alloc]initWithCapacity:0];
+    for (UIView *tabBarButton in self.tabBar.subviews) {
+        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]){
+            [tabBarButtons addObject:tabBarButton];
+        }
+    }
+    UIControl *tabBarButton = [tabBarButtons objectAtIndex:self.selectedIndex];
+    return tabBarButton;
+}
+
 #pragma mark - 点击动画
-- (void)tabBarButtonClick:(UIControl *)tabBarButton
-{
+- (void)tabBarButtonClick:(UIControl *)tabBarButton{
     for (UIView *imageView in tabBarButton.subviews) {
         if ([imageView isKindOfClass:NSClassFromString(@"UITabBarSwappableImageView")]) {
             //需要实现的帧动画,这里根据自己需求改动
@@ -106,6 +125,10 @@
         }
     }
 }
+
+
+
+
 
 
 #pragma mark - 禁止屏幕旋转
